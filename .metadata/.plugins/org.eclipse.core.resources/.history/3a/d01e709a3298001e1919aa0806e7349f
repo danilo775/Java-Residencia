@@ -1,0 +1,17 @@
+package caixaEletronico;
+
+public class CaixaEletronico {
+	
+	
+	public static void sacar(float saque)throws ValorInvalidoException {
+		if(saque % 10 != 0) {
+			throw new ValorInvalidoException("Saque invalido");
+		}
+		 System.out.println("Saque de R$" + saque + " realizado com sucesso.");
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

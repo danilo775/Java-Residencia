@@ -1,0 +1,17 @@
+package calculadora;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args)throws ImpossivelDividirPorZeroException {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um numeero");
+		float a = sc.nextFloat();
+		System.out.println("Digite um numeero");
+		float b = sc.nextFloat();
+		
+		Calculadora.dividir(a, b);
+		
+	}
+}

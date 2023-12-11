@@ -1,0 +1,29 @@
+package caixaEletronico;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.List;
+
+public class CaixaEletronico {
+	private List<Double>notas;
+	
+	public CaixaEletronico() {
+        notas = new ArrayList<>();
+        notas.add((double) 100);
+        notas.add((double) 50);
+        notas.add((double) 10);
+    }
+	
+	
+	public void notasDisponivel() {
+		System.err.println("Notas Disponivel " + notas);
+	}
+	
+	
+	public static void sacar(float saque)throws ValorInvalidoException {
+		if(saque % 10 != 0) {
+			throw new ValorInvalidoException("Saque invalido! permido somente divisivel por 10");
+		}
+		 System.out.println("Saque de R$" + saque + " realizado com sucesso.");
+	}
+	
+}

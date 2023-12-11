@@ -1,0 +1,22 @@
+package calculadora;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um número:");
+        float a = sc.nextFloat();
+
+        System.out.println("Digite outro número:");
+        float b = sc.nextFloat();
+
+        try {
+            float resultado = Calculadora.dividir(a, b);
+            System.out.println("Resultado da divisão: " + resultado);
+        } catch (ImpossivelDividirPorZeroException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}

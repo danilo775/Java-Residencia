@@ -1,0 +1,26 @@
+package caixaEletronico;
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+
+		public class Main {
+		    public static void main(String[] args) {
+		        Scanner sc = new Scanner(System.in);
+
+		        System.out.println("Digite o valor a ser sacado:");
+		        int valor = sc.nextInt();
+
+		        try {
+		            CaixaEletronico.sacarChecado(valor);
+		            // Ou, para a versão não checada:
+		            // CaixaEletronico.sacarNaoChecado(valor);
+		        } catch (ValorInvalidoException e) {
+		            System.out.println("Erro: " + e.getMessage());
+		        }
+		    }
+		}
+
+	}
+}

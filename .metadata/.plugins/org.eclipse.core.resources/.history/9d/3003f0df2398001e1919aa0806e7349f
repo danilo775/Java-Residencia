@@ -1,0 +1,15 @@
+package calculadora;
+
+public class ImpossivelDividirPorZeroException extends Exception{
+	int dividendo;
+	float dividendu;
+	public ImpossivelDividirPorZeroException(int dividendo) {
+		this.dividendo = dividendo;
+	}
+	public ImpossivelDividirPorZeroException(float dividend) {
+		this.dividendu = dividend;
+	}
+	public String getMessage() {
+		return " Impossivel Dividir " + dividendo + " por Zero";
+	}
+}
